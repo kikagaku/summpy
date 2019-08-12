@@ -43,7 +43,7 @@ def _decode_janome_token(t, encoding='utf-8'):
     for attr_name in attributes:
         value = getattr(t, attr_name)
         if type(value) == str:
-            setattr(t, attr_name, value.decode('utf-8'))
+            setattr(t, attr_name, value)
     return t
 
 
